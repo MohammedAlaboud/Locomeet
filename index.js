@@ -11,9 +11,10 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use('/cssFiles', express.static(__dirname + '/views'));
+app.use('/res', express.static(__dirname + '/Resources'))
 
 app.get('/', (req, res) => {
-	res.sendFile('main.html', {root: path.join(__dirname, './views')});
+	res.sendFile('create.html', {root: path.join(__dirname, './views')});
 });
 
 
