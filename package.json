@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MohammedAlaboud/Locomeet/issues"
   },
-  "homepage": "https://github.com/MohammedAlaboud/Locomeet#readme"
+  "homepage": "https://github.com/MohammedAlaboud/Locomeet#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
 }
