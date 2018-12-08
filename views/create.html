@@ -2,13 +2,14 @@
 <html>
 
 <link rel="stylesheet" type="text/css" href="/cssFiles/create.css">
+<script src="../controller/create.js"></script>
 
 <body>
     <div class="page">
         <div class="container">
             <div class="left">
                 <div class="title">
-                    <button class="myButton" type="button">Create Event</button>
+                    <button class="myButton" onclick="createNewEvent()" type="button">Create Event</button>
                 </div>
                 <!--<div class="eula">By logging in you agree to the ridiculously long terms that you didn't bother to read</div>-->
             </div>
@@ -23,6 +24,15 @@
                         <input onfocus="(this.type='date')" onblur="(this.type='text')" name="endDate" placeholder="End Date">
 
                         <input type="number" name="eventLength" placeholder="Event Length">
+                        
+                        <select>
+                            <option value="Cafe">Cafe</option>
+                            <option value="Restaurant">Restaurant</option>
+                            <option value="Pub">Pub</option>
+                            <option value="Park">Park</option>
+                            <option value="Dan">Dan</option>
+                        </select>
+
                     </form>
                 </div>
             </div>
