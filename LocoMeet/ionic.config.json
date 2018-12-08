@@ -1,7 +1,0 @@
-{
-  "name": "LocoMeet",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
