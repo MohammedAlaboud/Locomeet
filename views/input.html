@@ -1,10 +1,239 @@
 <!DOCTYPE html>
 <html>
 
-<link rel="stylesheet" type="text/css" href="input.css">
+<link rel="stylesheet" type="text/css" href="/cssFiles/input.css">
+<script src="../controller/create.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<body onload="retrieveData()">
+    <div class="page">
+        <div class="container">
+        	<div class="form-container">
+        		<form id="form-container">
+        			<!-- <div class="row">
+        				<div class="col s4"><form>
+        					
+        					<div class="input-field col s12">
+					          <input id="postcode" type="text" class="validate">
+					          <label for="postcode">Post code</label>
+					        </div>
+					        <div class="input-field col s6">
+					          <input id="starttime" type="text" class="validate">
+					          <label for="starttime">Start time</label>
+					        </div>
+					        <div class="input-field col s6">
+					          <input id="endtime" type="text" class="validate">
+					          <label for="endtime">End time</label>
+					        </div>
+    </div>
+        				<div class="col s4">asdf</div>
+        				<div class="col s4">asdf</div>
+        			</div> -->
+        		<form>
+        		<p id="p1"></p>
+
+        </div>
+    </div>
+
+    
+
+ 	<script language='javascript'>
+		function retrieveData(){
+
+			date1 = new Date(2018, 12, 5);
+			date2 = new Date(2018, 12, 8);
+
+			var one_day=1000*60*60*24;
+
+			var date1_ms = date1.getTime();
+  			var date2_ms = date2.getTime();
+
+  			var difference_ms = date2_ms - date1_ms;
 
 
+  			var numOfDays = Math.round(difference_ms/one_day);
+
+  			var temp = date1_ms;
+
+			var a = [1,2,3]
+
+			for(var i=0; i< numOfDays; i++){
+
+
+			$("#someID").html(
+
+				<div class="row">
+        				<div class="col s4"><form>
+        					
+        					<div class="input-field col s12">
+					          <input id="postcode" type="text" class="validate">
+					          <label for="postcode">Post code</label>
+					        </div>
+					        <div class="input-field col s6">
+					          <input id="starttime" type="text" class="validate">
+					          <label for="starttime">Start time</label>
+					        </div>
+					        <div class="input-field col s6">
+					          <input id="endtime" type="text" class="validate">
+					          <label for="endtime">End time</label>
+					        </div>
+    					</div>
+        				<div class="col s4">asdf</div>
+        				<div class="col s4">asdf</div>
+        			</div> 
+
+				);
+			// 	var para = document.createElement("h5");
+			// 	temp += one_day;
+			// 	var date = new Date(temp);
+			// 	var node = document.createTextNode(date);
+			// 	para.appendChild(node);
+
+
+			// 	var element = document.getElementById("form-container");
+			// 	var child = document.getElementById("p1");
+			// 	element.insertBefore(para, child);
+
+
+			// 	var para = document.createElement("h4");
+			// 	var node = document.createTextNode("Slot 1");
+			// 	para.appendChild(node);
+
+
+				
+			// 	element.insertBefore(para, child);
+
+			// //	var txtPostCode2=$("<input>").attr("type","text").attr("placeholder","Post Code:");
+			// //	$(".form-container").append(txtPostCode2);
+
+			// 	 var txtPostCode = document.createElement("INPUT");
+			// 	 txtPostCode.setAttribute("type", "text");
+			// 	 txtPostCode.placeholder = "Post Code:";
+			// 	 var element = document.getElementById("form-container");
+			// 	 var child = document.getElementById("p1");
+			// 	 element.insertBefore(txtPostCode, child);
+
+
+			// 	var txtPostCode = document.createElement("INPUT");
+			// 	txtPostCode.setAttribute("type", "text");
+			// 	txtPostCode.placeholder = "Start Date:";
+			// 	var element = document.getElementById("form-container");
+			// 	var child = document.getElementById("p1");
+			// 	element.insertBefore(txtPostCode, child);
+
+
+
+			// 	var txtPostCode = document.createElement("INPUT");
+			// 	txtPostCode.setAttribute("type", "text");
+			// 	txtPostCode.placeholder = "End Date:";
+			// 	var element = document.getElementById("form-container");
+			// 	var child = document.getElementById("p1");
+			// 	element.insertBefore(txtPostCode, child);
+
+
+
+			// 	var para = document.createElement("h4");
+			// 	var node = document.createTextNode("Slot 2");
+			// 	para.appendChild(node);
+
+
+			// 	var element = document.getElementById("form-container");
+			// 	var child = document.getElementById("p1");
+			// 	element.insertBefore(para, child);
+
+			// 	var txtPostCode = document.createElement("INPUT");
+			// 	txtPostCode.setAttribute("type", "text");
+			// 	txtPostCode.placeholder = "Post Code:";
+			// 	var element = document.getElementById("form-container");
+			// 	var child = document.getElementById("p1");
+			// 	element.insertBefore(txtPostCode, child);
+
+
+			// 	var txtPostCode = document.createElement("INPUT");
+			// 	txtPostCode.setAttribute("type", "text");
+			// 	txtPostCode.placeholder = "Start Date:";
+			// 	var element = document.getElementById("form-container");
+			// 	var child = document.getElementById("p1");
+			// 	element.insertBefore(txtPostCode, child);
+
+
+
+			// 	var txtPostCode = document.createElement("INPUT");
+			// 	txtPostCode.setAttribute("type", "text");
+			// 	txtPostCode.placeholder = "End Date:";
+			// 	var element = document.getElementById("form-container");
+			// 	var child = document.getElementById("p1");
+			// 	element.insertBefore(txtPostCode, child);
+
+
+
+
+			// 	var para = document.createElement("h4");
+			// 	var node = document.createTextNode("Slot 3");
+			// 	para.appendChild(node);
+
+
+			// 	var element = document.getElementById("form-container");
+			// 	var child = document.getElementById("p1");
+			// 	element.insertBefore(para, child);
+
+			// 	var txtPostCode = document.createElement("INPUT");
+			// 	txtPostCode.setAttribute("type", "text");
+			// 	txtPostCode.placeholder = "Post Code:";
+			// 	var element = document.getElementById("form-container");
+			// 	var child = document.getElementById("p1");
+			// 	element.insertBefore(txtPostCode, child);
+
+
+			// 	var txtPostCode = document.createElement("INPUT");
+			// 	txtPostCode.setAttribute("type", "text");
+			// 	txtPostCode.placeholder = "Start Date:";
+			// 	var element = document.getElementById("form-container");
+			// 	var child = document.getElementById("p1");
+			// 	element.insertBefore(txtPostCode, child);
+
+
+
+			// 	var txtPostCode = document.createElement("INPUT");
+			// 	txtPostCode.setAttribute("type", "text");
+			// 	txtPostCode.placeholder = "End Date:";
+			// 	var element = document.getElementById("form-container");
+			// 	var child = document.getElementById("p1");
+			// 	element.insertBefore(txtPostCode, child);
+				
+
+
+
+			// }
+   			
+		}
+$(document).ready(function(){
+    $('.timepicker').timepicker();
+  });
+		
+          
+</script>
 
 </body>
 
+
+
 </html>
+
+
+
+
+
+
+
+
+
+
+        	
+           

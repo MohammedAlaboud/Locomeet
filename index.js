@@ -14,7 +14,7 @@ app.use('/cssFiles', express.static(__dirname + '/views'));
 app.use('/res', express.static(__dirname + '/Resources'))
 
 app.get('/', (req, res) => {
-	res.sendFile('create.html', {root: path.join(__dirname, './views')});
+	res.sendFile('input.html', {root: path.join(__dirname, './views')});
 });
 
 
